@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>A simple calculator</title>
+</head>
+<body>
+    <form name="form">
+        <!-- <label class="toggle">
+            <input type="checkbox" id="">
+        </label> -->
+        <div class="display">
+            <input type="text" class="computation" name="input">
+            <input type="text" class="result" name="result">
+        </div>
+        <div class="buttons">
+            <button onclick="handleCancel()">C</button>
+            <button onclick="form.input.value += '('">(</button>
+            <button onclick="form.input.value += ')'">)</button>
+            <button onclick="form.input.value += '/'">÷</button>
+            <button onclick="form.input.value += 7">7</button>
+            <button onclick="form.input.value += 8">8</button>
+            <button onclick="form.input.value += 9">9</button>
+            <button onclick="form.input.value +='*'">×</button>
+            <button onclick="form.input.value += 4">4</button>
+            <button onclick="form.input.value += 5">5</button>
+            <button onclick="form.input.value += 6">6</button>
+            <button onclick="form.input.value += '-'">-</button>
+            <button onclick="form.input.value += 1">1</button>
+            <button onclick="form.input.value += 2">2</button>
+            <button onclick="form.input.value += 3">3</button>
+            <button onclick="form.input.value += '+'">+</button>
+            <button onclick="form.input.value += 0">0</button>
+            <button onclick="form.input.value += '.'">.</button>
+            <button onclick="form.result.value = eval(form.input.value)">=</button>
+        </div>
+    </form>
+    <script src="main.js">
+    </script>
+</body>
+</html>

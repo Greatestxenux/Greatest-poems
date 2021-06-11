@@ -1,0 +1,8 @@
+@mixin Shadow() {
+    box-shadow: 
+    5px 5px 5px #ddd, 
+    -5px -5px 5px #fff,
+    inset 5px 5px 5px #ddd,
+    inset -5px -5px 5px #fff
+    ;
+}
